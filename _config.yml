@@ -7,7 +7,7 @@
 # 井号后面的文字是说明文档，不会被程序读取。
 
 # 描述/签名
-name: HK
+name: HK's Blog
 description: 一个没搭好的博客
 
 # 输入你的网站域名（如果你没有添加自己的域名，而是直接用GitHub pages分配的域名的话可以省略）
@@ -24,8 +24,7 @@ baseurl:
 #
 
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
-avatar: https://pics4.baidu.com/feed/f603918fa0ec08fa192eb7d5fe828d6a55fbda0e.jpeg?token=40200a8598a8b9e4538e91b99a3e6174
-
+avatar: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fnimg.ws.126.net%2F%3Furl%3Dhttp%3A%2F%2Fdingyue.ws.126.net%2F2021%2F0531%2F0673ed75j00qtyrhi00b8c000m800eac.jpg%26thumbnail%3D650x2147483647%26quality%3D80%26type%3Djpg&refer=http%3A%2F%2Fnimg.ws.126.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1667467781&t=7f46b4c9a294ffc24c421eaeb9ccb16c
 # 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
 favicon: https://bkimg.cdn.bcebos.com/pic/728da9773912b31bb0513050ae53217adab44aed4b3c?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg
 
@@ -58,7 +57,7 @@ footer-links:
   instagram: #https://instagram.com/<>
   linkedin: #https://www.linkedin.com/in/<>
   pinterest: #https://www.pinterest.com/<>
-  rss: 123 #随便填点啥RSS就能用了
+  rss: #随便填点啥RSS就能用了
   stackoverflow: # http://stackoverflow.com/<>
   tumblr: # https://<username>.tumblr.com
   twitter: # https://www.twitter.com/<your_twitter_username> 
@@ -71,7 +70,7 @@ footer-text: Copyright (C) 2022 HK Technologies.,保留一切权力.
 #
 
 # 输入Disqus shortname，即可添加评论区，请查阅文档，设置自己的disqus站点，不要继续使用我的站点loffer
-disqus: loffer #shortname
+disqus: 
 
 # 输入Gitalk相关设定，即可添加评论区，具体请看教程
 gitalk:
