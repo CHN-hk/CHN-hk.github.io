@@ -7,8 +7,8 @@
 # 井号后面的文字是说明文档，不会被程序读取。
 
 # 描述/签名
-name: LOFFER
-description: 一个可以fork的博客
+name: HK
+description: 一个没搭好的博客
 
 # 输入你的网站域名（如果你没有添加自己的域名，而是直接用GitHub pages分配的域名的话可以省略）
 url: 
@@ -16,7 +16,7 @@ url:
 # 添加你的博客的二级域名，一般来说是你的repository名
 # 如果你的博客的URL是：(http://yourusername.github.io/repository-name)
 # 那么就写成 "/repository-name"
-baseurl: /LOFFER
+baseurl: 
 
 
 #
@@ -24,11 +24,10 @@ baseurl: /LOFFER
 #
 
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
-avatar: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/logo.png
+avatar: https://pics4.baidu.com/feed/f603918fa0ec08fa192eb7d5fe828d6a55fbda0e.jpeg?token=40200a8598a8b9e4538e91b99a3e6174
 
 # 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
-favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/favicon.png
-
+favicon: https://bkimg.cdn.bcebos.com/pic/728da9773912b31bb0513050ae53217adab44aed4b3c?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg
 
 # 菜单中的按钮
 navigation:
@@ -52,22 +51,21 @@ footer-links:
   weibo:  #请输入你的微博个性域名 https://www.weibo.com/<thispart>
   behance: # https://www.behance.net/<>
   dribbble: # https://dribbble.com/<>
-  email: #youremailaddress@mail.com
+  email: itc@zjustaff.onmicrosoft.com #youremailaddress@mail.com
   facebook: #https://www.facebook.com/<>
   flickr: #https://www.flickr.com/<>
-  github: FromEndWorld/loffer #https://github.com/<>
+  github: CHN-hk #https://github.com/<>
   instagram: #https://instagram.com/<>
   linkedin: #https://www.linkedin.com/in/<>
   pinterest: #https://www.pinterest.com/<>
-  rss: #随便填点啥RSS就能用了
+  rss: 123 #随便填点啥RSS就能用了
   stackoverflow: # http://stackoverflow.com/<>
   tumblr: # https://<username>.tumblr.com
   twitter: # https://www.twitter.com/<your_twitter_username> 
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # 站点页脚的文字
-footer-text: Copyright (c) 2019 来自中世界
-
+footer-text: Copyright (C) 2022 HK Technologies.,保留一切权力.
 #
 # 评论，注意，请不要同时添加多种不同的评论区
 #
@@ -77,10 +75,10 @@ disqus: loffer #shortname
 
 # 输入Gitalk相关设定，即可添加评论区，具体请看教程
 gitalk:
-  clientID: 
-  clientSecret: 
-  repo: 
-  owner: 
+  clientID: feb0d27cefbb68da4c59
+  clientSecret: 43befe1b8ff62ff397c93e4711be5d4cff1dce5e
+  repo: blog-comments
+  owner: CHN-hk
   proxy:
 
 # 输入Google Analytics web tracking code
