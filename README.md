@@ -63,22 +63,3 @@ LOFFER只是容器，你的posts才是博客的核心。
 链接博客主的社交媒体。请在_config.yml中填写。
 
 支持Disqus和Gitalk两种评论区。请在_config.yml中设置。
-
-
-## 致谢
-
-* [Jekyll](https://github.com/jekyll/jekyll) - 这是本站存在的根基
-* [Kiko-now](<https://github.com/aweekj/kiko-now>) - 我首先是fork这个主题，然后再其上进行修改汉化，才有了LOFFER
-* [Font Awesome](<https://fontawesome.com/>) - 社交网络图标来自FontAwesome的免费开源内容
-
-
-
-## 帮助这个项目
-
-介绍更多人来使用它，摆脱lofter自由飞翔！
-
-欢迎Issues和Pull Requests。
-
-给我点一个☆吧！
-
-![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/givemefive.png)
