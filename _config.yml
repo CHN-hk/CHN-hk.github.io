@@ -39,7 +39,7 @@ navigation:
   - name: 标签
     url: /tags
   - name: 吃啥？
-    url：/eat
+    url: /eat
 # 每页的文章数
 paginate: 8
 
