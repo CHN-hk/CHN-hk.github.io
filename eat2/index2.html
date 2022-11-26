@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>吃啥？</title>
+<script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+<style>
+body {
+	background-color:aliceblue;
+}
+.wrapDiv {
+	width:80%;
+	max-width:1200px;
+	margin:0 auto;
+	text-align:center;
+	position:absolute;
+	top:80px;
+	left:0;
+	right:0;
+}
+.leftBox {
+	float:left;
+	width:800px;
+	height:240px;
+	/*background-color:aqua;
+	*/
+    	margin:0 auto;
+	margin-top:0px;
+	clear:both;
+}
+#span {
+	float:right;
+	top:30px;
+	right:185px;
+}
+#btn {
+	float:left;
+	width:100px;
+	height:30px;
+	margin-left:10px;
+	margin-top:120px;
+}
+.nameBox {
+	width:100px;
+	height:30px;
+	float:left;
+	background-color:antiquewhite;
+	margin-left:10px;
+	margin-top:40px;
+	text-align:center;
+	line-height:30px;
+}
+.selectedName {
+	float:right;
+	width:340px;
+	background:#666;
+	margin-top:10px;
+	margin-left:30px;
+	background:#ffffff;
+	overflow:hidden;
+}
+h1 {
+	text-align:center;
+}
+</style>
+</head>
+<body>
+<h1 align="center">今天吃啥？</h1>
+<h3 align="center">浙江中医药大学富春校区</h3>
+<span id="span"></span>
+
+<div class="wrapDiv">
+    <div id="leftBox" class="leftBox"></div>
+    <div id="selectedName" class="selectedName">
+        <h1>中奖者名单</h1>
+    </div>
+
+    <input type="button" id="btn" value="开始走起">
+</div>
+
+<script>
+ var arr = ["1F快餐", "1F自选区", "1F面条", "1F米粉", "1F馄饨", "2F水饺", "2F麻辣香锅", "2F米线","2F鸡", "2F小面", "2F铁板饭",
+     "2F面条","2F卤肉饭","2F饼", "2F煎肉饭","2F牛肉饭", "2F酸菜鱼", "2F牛肉汤","2F麻辣烫", "外卖", "出去吃", 
+ ];
+
+ var orgArrCount = arr.length;
+ var currentSelectNum = 0;
+
+ initForm();
+
+ function initForm() {
+     var selectedNameHeight = orgArrCount / 3 * 40 + 120;
+     $("#selectedName").css("height", selectedNameHeight + "px");
+     dynamicCreateBox();
+ }
+
+ function dynamicCreateBox() {
+     for (var i = 0; i < arr.length; i++) {
+         var div = document.createElement("div");
+         div.innerText = arr[i];
+         div.className = "nameBox";
+         $("#leftBox").append(div);
+     };
+ }
+
+ function clearBoxColor() {
+     $("#leftBox").children("div").each(function() {
+         $(this).css("background-color", "");
+     });
+ }
+
+ function setBoxColor() {
+     $("#leftBox").children("div").each(function() {
+         var thisText = ($(this).text());
+         var selectedName = arr[currentSelectNum];
+
+         if (thisText == selectedName) {
+             $(this).css("background-color", "red");
+         }
+     });
+ }
+
+ function appendSelectedName() {
+     var div = document.createElement("div");
+     div.innerText = arr[currentSelectNum];
+     div.className = "nameBox";
+     $("#selectedName").append(div);
+ }
+
+ $('#btn').click(function() {
+     var curentCount = arr.length;
+     if (curentCount < 10) {
+         alert("差不多得了");
+         clearBoxColor();
+         return;
+     }
+     if (this.value === "开始走起") {
+         timeId = setInterval(function() {
+             clearBoxColor();
+             var num = Math.floor(Math.random() * curentCount);
+             currentSelectNum = num;
+             setBoxColor();
+         }, 10);
+         this.value = "停止";
+     } else {
+         clearInterval(timeId);
+         appendSelectedName();
+         arr.splice(currentSelectNum, 1);
+         this.value = "开始走起";
+     }
+ });
+ getTime();
+ setInterval(getTime, 10)
+
+ function getTime() {
+     var day = new Date();
+     var year = day.getFullYear();
+     var month = day.getMonth() + 1;
+     var dat = day.getDate();
+     var hour = day.getHours();
+     var minitue = day.getMinutes();
+     var second = day.getSeconds();
+     month = month < 10 ? "0" + month : month;
+     dat = dat < 10 ? "0" + dat : dat;
+     hour = hour < 10 ? "0" + hour : hour;
+     minitue = minitue < 10 ? "0" + minitue : minitue;
+     second = second < 10 ? "0" + second : second;
+     $("#span").innerText = year + "-" + month + "-" + dat + " " + hour + ":" + minitue + ":" + second
+ }
+</script>
+</body>
+</html>
+
