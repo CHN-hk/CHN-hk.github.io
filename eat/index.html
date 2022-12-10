@@ -79,8 +79,7 @@ h1 {
 </div>
 
 <script>
- // 模拟后台数据
- var arr = ["1F快餐", "1F自选区", "1F面条", "1F米粉", "1F馄饨", "2F水饺", "2F麻辣香锅", "2F米线","2F鸡", "2F小面", "2F铁板饭",
+ var arr = ["1F快餐", "1F自选区", "1F面条", "1F米粉", "1F馄饨", "2F水饺", "2F麻辣香锅", "2F米线","2F木桶饭", "2F兰州拉面", "2F铁板饭",
      "2F面条","2F卤肉饭","2F饼", "2F煎肉饭","2F牛肉饭", "2F酸菜鱼", "2F牛肉汤","2F麻辣烫", "外卖", "出去吃", 
  ];
 
@@ -89,16 +88,12 @@ h1 {
 
  initForm();
 
- // 初始化表单
  function initForm() {
-     // 动态设置选择人的高度
      var selectedNameHeight = orgArrCount / 3 * 40 + 120;
      $("#selectedName").css("height", selectedNameHeight + "px");
-     // 动态创建图层
      dynamicCreateBox();
  }
 
- // 动态创建层
  function dynamicCreateBox() {
      for (var i = 0; i < arr.length; i++) {
          var div = document.createElement("div");
@@ -108,14 +103,12 @@ h1 {
      };
  }
 
- // 清空小方格颜色
  function clearBoxColor() {
      $("#leftBox").children("div").each(function() {
          $(this).css("background-color", "");
      });
  }
 
- // 设置选中小方格颜色
  function setBoxColor() {
      $("#leftBox").children("div").each(function() {
          var thisText = ($(this).text());
@@ -138,50 +131,35 @@ h1 {
      var curentCount = arr.length;
      if (curentCount < 10) {
          alert("差不多得了");
-         // 清空所有层的颜色
          clearBoxColor();
          return;
      }
-     // 监视按钮的状态
      if (this.value === "开始走起") {
-         // 定时针
          timeId = setInterval(function() {
-             // 清空所有层的颜色
              clearBoxColor();
-
-             //随机生成一个数
              var num = Math.floor(Math.random() * curentCount);
              currentSelectNum = num;
-
-             // 设置选中小方格颜色
              setBoxColor();
          }, 10);
          this.value = "停止";
      } else {
-         // 清除计时器
          clearInterval(timeId);
-
-         // 添加选中人
          appendSelectedName();
-
-         // 移除
          arr.splice(currentSelectNum, 1);
          this.value = "开始走起";
      }
  });
-
- // 获取时间的函数
  getTime();
  setInterval(getTime, 10)
 
  function getTime() {
      var day = new Date();
-     var year = day.getFullYear(); //年
-     var month = day.getMonth() + 1; //月
-     var dat = day.getDate(); //日
-     var hour = day.getHours(); //小时
-     var minitue = day.getMinutes(); //分钟
-     var second = day.getSeconds(); //秒
+     var year = day.getFullYear();
+     var month = day.getMonth() + 1;
+     var dat = day.getDate();
+     var hour = day.getHours();
+     var minitue = day.getMinutes();
+     var second = day.getSeconds();
      month = month < 10 ? "0" + month : month;
      dat = dat < 10 ? "0" + dat : dat;
      hour = hour < 10 ? "0" + hour : hour;
@@ -190,7 +168,6 @@ h1 {
      $("#span").innerText = year + "-" + month + "-" + dat + " " + hour + ":" + minitue + ":" + second
  }
 </script>
-	
 </body>
 </html>
 
