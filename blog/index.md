@@ -2,6 +2,7 @@
 > [主站](https://chn-hk.github.io "Markdown")
 
 1.[Markdown教程](https://chn-hk.github.io/blog/221126)
+2.[FUCK-QCZJ](https://chn-hk.github.io/blog/fuck)
 
 
 
