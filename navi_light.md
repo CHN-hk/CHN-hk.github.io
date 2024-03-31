@@ -1,5 +1,4 @@
-# NAVI临时引导界面
-
+# NAVI-Light
 1.[教务](https://cas.paas.zcmu.edu.cn/cas/login?service=http%3A%2F%2Fxjyt.zcmu.edu.cn%3A80%2Fcas%2Flogin%2Fcas%2Flogin%3Frzxx%3Dsupwisdom%26service%3Dhttp%253A%252F%252Fjwmk.zcmu.edu.cn%252Fjwglxt%252Fxtgl%252Findex_initMenu.html)
 2.[图书馆](https://libic.zcmu.edu.cn/h5/#/home)
 3.[WebVPN](https://wvpn.zcmu.edu.cn/login)
