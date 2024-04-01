@@ -1,4 +1,4 @@
-# 计科、统计学、生信  笔记
+# 计科、数科、生信  网站
 [numpy](https://www.runoob.com/numpy/numpy-array-creation.html)<br>
 [pandas](https://www.runoob.com/pandas/pandas-dataframe.html)<br>
 [pandas-describe](https://blog.csdn.net/m0_45210226/article/details/108942526)<br>
