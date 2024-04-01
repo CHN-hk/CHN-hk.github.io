@@ -1,8 +1,7 @@
 # 计科、统计学、生信  笔记
-Py-statistics https://docs.python.org/zh-cn/3/library/statistics.html
-numpy https://www.runoob.com/numpy/numpy-array-creation.html
-pandas https://www.runoob.com/pandas/pandas-dataframe.html
-pandas-describe https://blog.csdn.net/m0_45210226/article/details/108942526
-Matplotlib Pyplot https://www.runoob.com/matplotlib/matplotlib-pyplot.html
-***-导出 https://zhuanlan.zhihu.com/p/592141461
-biopython https://biopython-cn.readthedocs.io/zh-cn/latest/cn/chr01.html
+numpy https://www.runoob.com/numpy/numpy-array-creation.html<br>
+pandas https://www.runoob.com/pandas/pandas-dataframe.html<br>
+pandas-describe https://blog.csdn.net/m0_45210226/article/details/108942526<br>
+Matplotlib Pyplot https://www.runoob.com/matplotlib/matplotlib-pyplot.html<br>
+***-导出 https://zhuanlan.zhihu.com/p/592141461<br>
+biopython https://biopython-cn.readthedocs.io/zh-cn/latest/cn/chr01.html<br>
