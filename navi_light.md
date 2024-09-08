@@ -5,7 +5,7 @@
 ### 3.[WebVPN](https://wvpn.zcmu.edu.cn/login)<br>
 ### 4.[LIBVPN](https://res1.zcmu.edu.cn/)<br>
 ### 5.[LIVE](https://live.zcmu.edu.cn)<br>
-
+### 6.[PRINT](https://print.zcmu.edu.cn/client/new/cprintPc/login.html)<br>
 
 <div align=center>
 <img src="https://chn-hk.github.io/images/logo.png">
